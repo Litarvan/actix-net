@@ -16,10 +16,10 @@ name = "actix_ioframe"
 path = "src/lib.rs"
 
 [dependencies]
-actix-service = "1.0.1"
-actix-codec = "0.2.0"
-actix-utils = "1.0.4"
-actix-rt = "1.0.0"
+actix-service = { path = "../actix-service" }
+actix-codec = { path = "../actix-codec" }
+actix-utils = { path = "../actix-utils" }
+actix-rt = { path = "../actix-rt" }
 bytes = "0.5.3"
 either = "1.5.3"
 futures = "0.3.1"
@@ -27,5 +27,5 @@ pin-project = "0.4.6"
 log = "0.4"
 
 [dev-dependencies]
-actix-connect = "1.0.0"
-actix-testing = "1.0.0"
+actix-connect = { path = "../actix-connect" }
+actix-testing = { path = "../actix-testing" }

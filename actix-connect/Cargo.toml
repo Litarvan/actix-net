@@ -31,10 +31,10 @@ rustls = ["rust-tls", "tokio-rustls", "webpki"]
 uri = ["http"]
 
 [dependencies]
-actix-service = "1.0.3"
-actix-codec = "0.2.0"
-actix-utils = "1.0.6"
-actix-rt = "1.0.0"
+actix-service = { path = "../actix-service" }
+actix-codec = { path = "../actix-codec" }
+actix-utils = { path = "../actix-utils" }
+actix-rt = { path = "../actix-rt" }
 derive_more = "0.99.2"
 either = "1.5.3"
 futures = "0.3.1"
@@ -54,4 +54,4 @@ webpki = { version = "0.21", optional = true }
 
 [dev-dependencies]
 bytes = "0.5.3"
-actix-testing = { version="1.0.0" }
+actix-testing = { path = "../actix-testing" }
