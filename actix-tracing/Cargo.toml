@@ -16,11 +16,11 @@ name = "actix_tracing"
 path = "src/lib.rs"
 
 [dependencies]
-actix-service = "1.0.4"
+actix-service = { path = "../actix-service" }
 futures-util = "0.3.1"
 tracing = "0.1"
 tracing-futures = "0.2"
 
 [dev_dependencies]
-actix-rt = "1.0"
+actix-rt = { path = "../actix-rt" }
 slab = "0.4"
